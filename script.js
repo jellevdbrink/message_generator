@@ -43,5 +43,3 @@ const randString = {
         return `I ${start} ${mid} because ${end}!`
     }
 };
-
-console.log(randString.generate());

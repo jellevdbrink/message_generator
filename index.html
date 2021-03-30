@@ -6,8 +6,24 @@
         <meta name="description" content="Javascript executer">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="script.js"></script>
+        <style>
+            body {
+                font-family:Arial, Helvetica, sans-serif;
+            }
+        </style>
     </head>
     <body>
-        
+        <div>
+            <h1>CodeCademy Message generator</h1>
+            <button onclick="getElementById('message').innerHTML = randString.generate()">Generate message</button>
+            <p id='message'></p>
+        </div>
+        <hr>
+        <div>
+            <button onclick="getElementById('extra').innerHTML = randString.stringStart.join(' - ')">View String Starts</button>
+            <button onclick="getElementById('extra').innerHTML = randString.stringMid.join(' - ')">View String Mids</button>
+            <button onclick="getElementById('extra').innerHTML = randString.stringEnd.join(' - ')">View String Ends</button>
+            <p id="extra"></p>
+        </div>
     </body>
 </html>
